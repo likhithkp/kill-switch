@@ -2,7 +2,7 @@ package killswitch
 
 import "os"
 
-var Enable bool = true
+var Enable bool = false
 
 func init() {
 	if !Enable {
