@@ -2,10 +2,12 @@ package killswitch
 
 import "os"
 
-var Enable bool = false
-
 func init() {
-	if !Enable {
+	if shouldKill() {
 		os.Exit(1)
 	}
+}
+
+func shouldKill() bool {
+	return false
 }
